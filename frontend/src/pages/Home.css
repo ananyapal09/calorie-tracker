@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+.home-page {
+  --ink: #1F241A;
+  --ink-soft: #4A5240;
+  --paper: #EFEADD;
+  --card: #FBF8EF;
+  --moss: #3E4B2B;
+  --moss-light: #6B7F49;
+  --gold: #C08A28;
+  --line: rgba(31, 36, 26, 0.16);
+  --line-strong: rgba(31, 36, 26, 0.55);
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+.home-page * {
+  box-sizing: border-box;
+}
+
+.home-page .container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--ink);
+  margin: 0;
+}
+
+.home-page a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-page :focus-visible {
+  outline: 2px solid var(--moss);
+  outline-offset: 3px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--moss);
+  color: var(--paper);
+}
+
+.btn-primary:hover {
+  background: var(--ink);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+.btn-ghost:hover {
+  border-color: var(--ink);
+}
+
+.btn-on-dark {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.btn-on-dark:hover {
+  background: #d89b34;
+}
+
+/* ---------- Hero ---------- */
+
+.hero-section {
+  padding: 96px 0 80px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-kicker {
+  font-size: 0.95rem;
+  color: var(--moss);
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  max-width: 12ch;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin: 24px 0 36px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 32px;
+  margin: 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.hero-stats dt {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+
+.hero-stats dd {
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* ---------- Hero nutrition-label visual ---------- */
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.label-panel {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  padding: 28px 28px 22px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.label-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.label-rule {
+  height: 1px;
+  background: var(--line-strong);
+  margin: 10px 0;
+}
+
+.label-rule-thick {
+  height: 5px;
+  background: var(--ink);
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.92rem;
+  padding: 6px 0;
+}
+
+.label-row-lg {
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.label-row-sm {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.label-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+}
+
+.label-value em {
+  font-style: normal;
+  color: var(--ink-soft);
+  font-size: 0.85em;
+}
+
+/* ---------- Section heading ---------- */
+
+.section-heading {
+  max-width: 52ch;
+  margin-bottom: 48px;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.section-heading p {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* ---------- Features (nutrition-label-style rows) ---------- */
+
+.features-section {
+  padding: 72px 0;
+}
+
+.feature-list {
+  border-top: 2px solid var(--ink);
+}
+
+.feature-row {
+  display: block;
+  padding: 28px 4px;
+  border-bottom: 1px solid var(--line);
+  transition: background-color 0.15s ease;
+}
+
+.feature-row:hover {
+  background: var(--card);
+}
+
+.feature-row-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.feature-row-head h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.feature-cta {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--moss);
+  white-space: nowrap;
+}
+
+.feature-row p {
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* ---------- How it works ---------- */
+
+.how-section {
+  padding: 72px 0;
+  background: var(--card);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.steps-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.step-item {
+  padding-top: 20px;
+  border-top: 2px solid var(--ink);
+}
+
+.step-number {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--moss);
+  margin-bottom: 14px;
+}
+
+.step-item h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.step-item p {
+  color: var(--ink-soft);
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+/* ---------- CTA ---------- */
+
+.cta-section {
+  background: var(--ink);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: left;
+  max-width: 480px;
+}
+
+.cta-inner h2 {
+  color: var(--paper);
+  font-size: clamp(1.7rem, 2.8vw, 2.3rem);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.cta-inner p {
+  color: #C9C4B4;
+  font-size: 1.05rem;
+  margin: 0 0 32px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .label-panel {
+    max-width: 100%;
+  }
+
+  .steps-list {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-section {
+    padding: 64px 0 56px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-row-head {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page * {
+    transition: none !important;
+  }
+}
