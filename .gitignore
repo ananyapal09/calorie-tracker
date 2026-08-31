@@ -1,1 +1,21 @@
+# Node
 node_modules/
+
+# Python
+.venv/
+food-ai/bin/
+food-ai/lib/
+food-ai/include/
+food-ai/share/
+__pycache__/
+*.pyc
+
+# Uploaded files
+backend/uploads/
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
+*.env
