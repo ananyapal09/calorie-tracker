@@ -1,21 +1,13 @@
-# Node
 node_modules/
 
-# Python
 .venv/
-food-ai/bin/
-food-ai/lib/
-food-ai/include/
-food-ai/share/
+venv/
 __pycache__/
 *.pyc
-
-# Uploaded files
-backend/uploads/
-
-# macOS
+.env
 .DS_Store
 
-# Environment files
-.env
-*.env
+food-ai/bin/
+food-ai/lib/
+food-ai/share/
+food-ai/pyvenv.cfg
