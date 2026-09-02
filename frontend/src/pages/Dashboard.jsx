@@ -37,12 +37,12 @@ function Dashboard() {
       };
 
       const [todayResponse, weeklyResponse] = await Promise.all([
-        fetch("http://localhost:5001/api/meals/summary/today", {
+        fetch("https://calorie-tracker-backend-r6e5.onrender.com/api/meals/summary/today", {
           method: "GET",
           headers,
         }),
 
-        fetch("http://localhost:5001/api/meals/summary/weekly", {
+        fetch("https://calorie-tracker-backend-r6e5.onrender.com/api/meals/summary/weekly", {
           method: "GET",
           headers,
         }),

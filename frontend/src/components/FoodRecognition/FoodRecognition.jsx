@@ -238,7 +238,7 @@ function FoodRecognition({ onMealAdded }) {
       formData.append("image", file);
 
       const response = await fetch(
-        "http://localhost:5001/api/ai/parse-image",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/ai/parse-image",
         {
           method: "POST",
           headers: {
@@ -336,7 +336,7 @@ function FoodRecognition({ onMealAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/meals",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/meals",
         {
           method: "POST",
           headers: {

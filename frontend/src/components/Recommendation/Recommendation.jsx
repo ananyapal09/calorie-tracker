@@ -42,7 +42,7 @@ function Recommendation() {
       }
 
       const response = await fetch(
-        `http://localhost:5001/api/meals/suggestions?goal=${encodeURIComponent(
+        `https://calorie-tracker-backend-r6e5.onrender.com/api/meals/suggestions?goal=${encodeURIComponent(
           selectedGoal
         )}`,
         {

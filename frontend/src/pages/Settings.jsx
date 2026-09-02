@@ -29,7 +29,7 @@ function Settings() {
       }
 
       const response = await fetch(
-        "http://localhost:5001/api/users/profile",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/users/profile",
         {
           method: "GET",
           headers: {
@@ -101,7 +101,7 @@ function Settings() {
       });
 
       const response = await fetch(
-        "http://localhost:5001/api/users/profile",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/users/profile",
         {
           method: "PUT",
           headers: {

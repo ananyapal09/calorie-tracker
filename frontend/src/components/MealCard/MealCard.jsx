@@ -37,7 +37,7 @@ function MealCard({ onMealAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/users/profile",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/users/profile",
         {
           method: "GET",
           headers: {
@@ -99,7 +99,7 @@ function MealCard({ onMealAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/meals",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/meals",
         {
           method: "GET",
           headers: {
@@ -184,7 +184,7 @@ function MealCard({ onMealAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/users/profile",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/users/profile",
         {
           method: "PUT",
           headers: {
@@ -275,7 +275,7 @@ function MealCard({ onMealAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/meals",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/meals",
         {
           method: "POST",
           headers: {
@@ -349,7 +349,7 @@ function MealCard({ onMealAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/ai/parse-meal",
+        "https://calorie-tracker-backend-r6e5.onrender.com/api/ai/parse-meal",
         {
           method: "POST",
           headers: {
